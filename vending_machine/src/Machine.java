@@ -38,8 +38,20 @@ public class Machine {
 		Machine changeprice = new ChangePrice();
 		Machine print = new Print();
 		
+		System.out.println();
+		System.out.println("~~~~~~~서하은의 자판기에 오신 걸 환영합니다~~~~~~~");
+		System.out.println();
+		
 		while(true) {
 			int choice;
+			
+			System.out.println("==========================================");
+			for (int i = 0; i < cnt; i++) {
+				System.out.println(i+1 + ". " + list[i] + " (가격 : " + price[i] + "원, " + "남은 재고 : " + item[i] + ")");
+			}
+			System.out.println("==========================================");
+			
+			System.out.println();
 			System.out.println("원하시는 기능의 번호를 선택하세요! (끝내려면 0을 누르세요)");
 			System.out.println("1. 메뉴 추가");
 			System.out.println("2. 재고 추가");
